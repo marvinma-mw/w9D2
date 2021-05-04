@@ -20,10 +20,40 @@ body {
 .header-nav__container:first-child > .header-nav__link {
   justify-content: space-evenly;
 }
+#alerts{
+  background-color: #CF513D;
+}
+@media screen and (max-width: 730px) {
+  /* Hide the header search input field. */
+  /* Hide the "Boards" text, but leave the boards icon. */
+  .boards-label{
+    opacity: 0;
 
-#trello-logo{
-  /* justify-content:center; */
-
+  }
+  #search{
+    opacity: 0;
+  }
+}
+.team__container{
+  background-color: #f4f5f7;
+  padding: 32px;
+}
+.team__info{
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+}
+.team__info > h1 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.team__info > a {
+  color: #172B4D;
+  line-height: 20px;
+  font-weight: normal;
 }
 
 /* Supplied CSS follows. */
